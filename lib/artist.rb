@@ -17,4 +17,13 @@ class Artist
     song = Song.new(song, genre)
     song.artist = self
     song
+  end
+
+  def songs
+    Song.all.select {|song| song.artist = self}
+  end
+
+  def genres
+    self.songs.map {|song| song.genre}
+  end
 end
