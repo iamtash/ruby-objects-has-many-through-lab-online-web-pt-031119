@@ -1,4 +1,4 @@
-class Patient 
+class Patient
 
   attr_accessor :name
 
@@ -9,8 +9,8 @@ class Patient
     @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
 end
